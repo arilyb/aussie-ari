@@ -1,0 +1,11 @@
+name: Ari
+type: theme
+description: 'A theme that adds and australian vibe to the website.'
+core_version_requirement: '>=9.2'
+libraries:
+  - ari/global-styling
+base theme: stable9
+regions:
+  header: 'Header'
+  content: 'Content'
+  footer: 'Footer'

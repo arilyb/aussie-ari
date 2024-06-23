@@ -1,0 +1,36 @@
+{
+  "name": "gulp-sass-starter-template",
+  "version": "2.0.2",
+  "description": "Gulp SASS Starter Project with Bootstrap Example",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "IE 10"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ismailfarooq/gulp-sass-starter-template.git"
+  },
+  "author": "Ismail Farooq",
+  "license": "ISC",
+  "homepage": "https://github.com/ismailfarooq/gulp-sass-starter-template#readme",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.5.1"
+  }
+}
