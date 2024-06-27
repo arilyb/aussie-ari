@@ -1,6 +1,17 @@
+
+
+@import "helpers/grid";
+@import "helpers/fonts";
+@import "helpers/colors";
+
+@import "components/image";
+@import "components/blog";
+
+* {
+    box-sizing: border-box;
+    font-family: "Mukta Regular";
+}
 body {
+    background-color: $color-primary;
     margin: 0;
 }
-
-@import "components/grid";
-
