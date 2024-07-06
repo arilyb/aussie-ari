@@ -10,18 +10,23 @@
  */
 #}
 {% if breadcrumb %}
-  <nav role="navigation" aria-labelledby="system-breadcrumb">
-    <h2 id="system-breadcrumb" class="visually-hidden">{{ 'Breadcrumb'|t }}</h2>
-    <ol>
-    {% for item in breadcrumb %}
-      <li>
-        {% if item.url %}
-          <a href="{{ item.url }}">{{ item.text }}</a>
-        {% else %}
-          {{ item.text }}
-        {% endif %}
-      </li>
-    {% endfor %}
-    </ol>
-  </nav>
+	<nav role="navigation" aria-labelledby="system-breadcrumb container--fluid">
+		<h2 id="system-breadcrumb" class="visually-hidden">{{ 'Breadcrumb'|t }}</h2>
+		<div class="container__row">
+			<ol class="container__col-8 container__col-offset-2 o-breadcrumbs">
+				{% for item in breadcrumb %}
+					<li>
+						{% if item.url %}
+							<a href="{{ item.url }}">{{ item.text }}</a>
+						{% else %}
+							{{ item.text }}
+						{% endif %}
+					</li>
+                    {% if not loop.last %}
+                        /
+                    {% endif %}
+				{% endfor %}
+			</ol>
+		</div>
+	</nav>
 {% endif %}

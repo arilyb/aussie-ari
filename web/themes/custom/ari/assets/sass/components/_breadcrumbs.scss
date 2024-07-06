@@ -1,0 +1,14 @@
+.o-breadcrumbs {
+    display: flex;
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    text-transform: uppercase;
+    li:not(:last-child) {
+        padding-right: 1rem;
+    }
+    li:not(:first-child) {
+        padding-left: 1rem;
+     }
+
+}
