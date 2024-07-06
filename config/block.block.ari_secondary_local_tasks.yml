@@ -1,0 +1,22 @@
+uuid: ccff6add-9376-4adb-8341-39e1ead6179b
+langcode: en
+status: false
+dependencies:
+  theme:
+    - ari
+_core:
+  default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
+id: ari_secondary_local_tasks
+theme: ari
+region: header
+weight: 2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

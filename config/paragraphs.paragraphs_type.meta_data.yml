@@ -1,0 +1,10 @@
+uuid: e42e6527-1af5-4f66-aed1-b5d536666bd9
+langcode: en
+status: true
+dependencies: {  }
+id: meta_data
+label: 'Meta data'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

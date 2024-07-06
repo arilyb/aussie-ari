@@ -1,0 +1,22 @@
+uuid: 9714ea39-dbe1-41a0-87f0-c375894b4278
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ari
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: ari_content
+theme: ari
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

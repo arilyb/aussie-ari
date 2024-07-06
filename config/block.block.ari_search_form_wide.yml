@@ -1,0 +1,23 @@
+uuid: b37b6124-8b90-41e8-bfa0-842aa5f19b7f
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - ari
+_core:
+  default_config_hash: imMyHD6LYci0gtXq56qr9ZKGHzbEG9uFydrN5EhKtSU
+id: ari_search_form_wide
+theme: ari
+region: header
+weight: -2
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

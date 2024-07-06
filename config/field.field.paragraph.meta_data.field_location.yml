@@ -1,0 +1,21 @@
+uuid: 0138d991-b43c-4367-a161-89105ea6593d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_location
+    - paragraphs.paragraphs_type.meta_data
+  module:
+    - text
+id: paragraph.meta_data.field_location
+field_name: field_location
+entity_type: paragraph
+bundle: meta_data
+label: Location
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

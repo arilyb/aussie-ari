@@ -3,26 +3,38 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.blog.body
+    - field.field.node.blog.field_content
+    - field.field.node.blog.field_image
     - node.type.blog
   module:
-    - text
+    - ari_formatters
+    - entity_reference_revisions
     - user
 id: node.blog.default
 targetEntityType: node
 bundle: blog
 mode: default
 content:
-  body:
-    type: text_default
+  field_content:
+    type: entity_reference_revisions_entity_view
     label: hidden
-    settings: {  }
+    settings:
+      view_mode: default
+      link: ''
     third_party_settings: {  }
-    weight: 101
+    weight: 1
     region: content
-  links:
-    settings: {  }
+  field_image:
+    type: image_class_formatter
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+      classes: a-image
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
-hidden: {  }
+hidden:
+  links: true

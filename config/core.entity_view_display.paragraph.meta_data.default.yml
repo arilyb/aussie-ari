@@ -1,0 +1,42 @@
+uuid: 57ff0517-7852-486c-bd69-41b74a512b8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.meta_data.field_date
+    - field.field.paragraph.meta_data.field_location
+    - field.field.paragraph.meta_data.field_tags
+    - paragraphs.paragraphs_type.meta_data
+  module:
+    - datetime
+    - text
+id: paragraph.meta_data.default
+targetEntityType: paragraph
+bundle: meta_data
+mode: default
+content:
+  field_date:
+    type: datetime_custom
+    label: hidden
+    settings:
+      timezone_override: ''
+      date_format: 'd M ''y'
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_location:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

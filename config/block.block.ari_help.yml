@@ -1,0 +1,22 @@
+uuid: b54580ed-b6b1-490b-a20f-d980f3d81b7d
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - ari
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: ari_help
+theme: ari
+region: header
+weight: 3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

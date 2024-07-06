@@ -1,0 +1,25 @@
+uuid: a06240ac-450f-455c-94bb-189e8ec7b004
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - ari
+_core:
+  default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
+id: ari_site_branding
+theme: ari
+region: header
+weight: 6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

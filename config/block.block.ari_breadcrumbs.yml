@@ -1,0 +1,22 @@
+uuid: 7efdefe6-6259-4d40-b4a2-8bf3814b7e7b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ari
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: ari_breadcrumbs
+theme: ari
+region: header
+weight: -4
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }
