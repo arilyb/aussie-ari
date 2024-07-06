@@ -1,0 +1,32 @@
+.o-main-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-top: 2rem;
+    padding-left: 0;
+    a:link{
+        text-decoration: none;
+      }
+    li:not(:last-child) {
+        padding-right: 1rem;
+     }
+     li:last-child {
+        padding-left: 1rem;
+     }
+     li:first-child {
+        padding-left: 1rem;
+     }
+     .a-main-menu-styling-bar-front,
+     .a-main-menu-styling-bar-back {
+        height: 1.5px;
+        width: 100%;
+        background-color: $color-primary;
+     }
+     .a-main-menu-styling-bar-front {
+        margin-right: 1rem;
+     }
+     .a-main-menu-styling-bar-back {
+        margin-left: 1rem;
+     }
+}

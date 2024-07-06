@@ -6,12 +6,24 @@
 
 @import "components/image";
 @import "components/blog";
+@import "components/menu";
 
 * {
     box-sizing: border-box;
     font-family: "Mukta Regular";
 }
 body {
-    background-color: $color-primary;
+    // General styling
+    color: $color-primary;
+    background-color: $color-background;
     margin: 0;
+
+    // Link styling
+    a:link {
+        color: $color-primary;
+    }
+    a:hover, a:active, .is-active:link {
+        color: $color-secondary;
+    }
+
 }
