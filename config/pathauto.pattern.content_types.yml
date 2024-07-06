@@ -1,0 +1,22 @@
+uuid: 366549e8-2267-4f98-8314-82695bc9ff82
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: content_types
+label: 'Content types'
+type: 'canonical_entities:node'
+pattern: '[node:content-type]/[node:title]'
+selection_criteria:
+  accf1aec-7063-4dff-adf8-82b0f141c18b:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: accf1aec-7063-4dff-adf8-82b0f141c18b
+    context_mapping:
+      node: node
+    bundles:
+      blog: blog
+selection_logic: and
+weight: -5
+relationships: {  }
