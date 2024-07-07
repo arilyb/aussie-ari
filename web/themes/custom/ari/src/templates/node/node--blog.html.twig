@@ -68,31 +68,37 @@
  * @ingroup themeable
  */
 #}
-{% set attributes = attributes.addClass('container--fluid') %}
-{% set content_attributes = content_attributes.addClass('container__row') %}
 
-<article{{ attributes }}>
+{% set article_row = article_row.addClass('container__row') %}
+{% set attributes = attributes.addClass('container__col-12') %}
 
-  {{ title_prefix }}
-  {% if label and not page %}
-    <h2{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
-  {% endif %}
-  {{ title_suffix }}
+<div {{ article_row }}>
+	<article{{attributes}}>
 
-  {% if display_submitted %}
-    <footer>
-      {{ author_picture }}
-      <div{{ author_attributes }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-        {{ metadata }}
-      </div>
-    </footer>
-  {% endif %}
+		{{ title_prefix }}
+		{% if label and not page %}
+			<h2{{title_attributes}}>
+				<a href="{{ url }}" rel="bookmark">{{ label }}</a>
+			</h2>
+		{% endif %}
+		{{ title_suffix }}
 
-  <div{{ content_attributes }}>
-    {{ content }}
-  </div>
+		{% if display_submitted %}
+			<footer>
+				{{ author_picture }}
+				<div{{author_attributes}}>
+					{% trans %}Submitted by
+					{{ author_name }}
+					on
+					{{ date }}{% endtrans %}
+					{{ metadata }}
+				</div>
+			</footer>
+		{% endif %}
 
-</article>
+		<div{{content_attributes}}>
+			{{ content }}
+		</div>
+
+	</article>
+</div>
