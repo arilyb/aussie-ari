@@ -1,0 +1,36 @@
+uuid: ac23dff9-1843-4be1-9059-022fa86109de
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.meta_data.field_date
+    - field.field.paragraph.meta_data.field_location
+    - field.field.paragraph.meta_data.field_tags
+    - paragraphs.paragraphs_type.meta_data
+  module:
+    - datetime
+    - text
+id: paragraph.meta_data.preview
+targetEntityType: paragraph
+bundle: meta_data
+mode: preview
+content:
+  field_date:
+    type: datetime_custom
+    label: hidden
+    settings:
+      timezone_override: ''
+      date_format: 'd F ''y'
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_location:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_tags: true

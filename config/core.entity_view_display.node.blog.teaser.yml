@@ -8,17 +8,33 @@ dependencies:
     - field.field.node.blog.field_image
     - node.type.blog
   module:
+    - entity_reference_revisions
+    - image
     - user
 id: node.blog.teaser
 targetEntityType: node
 bundle: blog
 mode: teaser
 content:
-  links:
-    settings: {  }
+  field_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: preview
+      link: ''
     third_party_settings: {  }
-    weight: 100
+    weight: 1
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
-  field_content: true
-  field_image: true
+  links: true
