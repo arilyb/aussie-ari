@@ -68,18 +68,9 @@
  * @ingroup themeable
  */
 #}
-{% set attributes = attributes.addClass('container__col-4') %}
+{% set attributes = attributes.addClass('container__col-xsm-12 container__col-sm-6 container__col-md-4 o-article') %}
 
 <article{{attributes}}>
-
-  {{ title_prefix }}
-  {% if label and not page %}
-    <h2{{title_attributes}}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
-  {% endif %}
-  {{ title_suffix }}
-
   {% if display_submitted %}
     <footer>
       {{ author_picture }}
@@ -94,7 +85,9 @@
   {% endif %}
 
   <div{{content_attributes}}>
+  <a href="{{ url }}">
     {{ content }}
+  </a>
   </div>
 
 </article>
