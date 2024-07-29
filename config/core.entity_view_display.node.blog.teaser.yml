@@ -8,8 +8,8 @@ dependencies:
     - field.field.node.blog.field_image
     - node.type.blog
   module:
+    - ari_formatters
     - entity_reference_revisions
-    - image
     - user
 id: node.blog.teaser
 targetEntityType: node
@@ -26,11 +26,12 @@ content:
     weight: 1
     region: content
   field_image:
-    type: image
+    type: image_class_formatter
     label: hidden
     settings:
-      image_link: ''
       image_style: ''
+      image_link: ''
+      classes: a-image__teaser
       image_loading:
         attribute: lazy
     third_party_settings: {  }
