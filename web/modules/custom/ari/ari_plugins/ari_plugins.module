@@ -1,0 +1,11 @@
+<?php
+
+// @todo Fix this
+function ari_plugins_views_data_alter(array &$data) {
+    $data['node__field_']['views_blog'] = array(
+      'sort' => [
+        'field' => 'field_',
+        'id' => 'custom-sort-plugin',
+      ],
+    );
+  }

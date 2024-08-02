@@ -1,0 +1,5 @@
+name: Custom Plugins
+type: module
+description: "Custom plugins ."
+package: 'Drupal'
+core_version_requirement: 9.x

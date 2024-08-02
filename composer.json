@@ -26,7 +26,8 @@
         "drupal/admin_toolbar": "^3.4",
         "drupal/paragraphs": "^1.17",
         "drupal/pathauto": "^1.12",
-        "drupal/easy_breadcrumb": "^2.0"
+        "drupal/easy_breadcrumb": "^2.0",
+        "drupal/better_exposed_filters": "^6.0"
     },
     "require-dev": {
         "drupal/core-dev": "^9.2"
