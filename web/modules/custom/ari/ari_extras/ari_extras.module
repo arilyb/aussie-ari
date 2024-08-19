@@ -1,0 +1,17 @@
+<?php
+use Drupal\Core\Form\FormStateInterface;
+
+function ari_extras_form_views_exposed_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+
+
+
+    // Hide sort by options if theres only one variant.
+    if($form['#id'] = "views-exposed-form-blog-page-1") {
+        $sort_by_options = count($form['sort_by']['#options']);
+        if($sort_by_options < 2) {
+            $form['sort_by']['#states']['visible'] = [
+                'select[name="sort_order"]' => array('value' => 'FALSE')
+            ];
+        }
+    }
+  }
