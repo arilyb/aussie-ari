@@ -5,7 +5,7 @@ function ari_extras_form_views_exposed_form_alter(&$form, FormStateInterface $fo
 
 
 
-    if($form['#id'] = "views-exposed-form-blog-page-1") {
+    if($form['#id'] === "views-exposed-form-blog-page-1") {
 
         // Hide sort by options if theres only one variant.
         $sort_by_options = count($form['sort_by']['#options']);
