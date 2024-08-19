@@ -1,0 +1,12 @@
+// Blogs sort and order form
+.o-blog-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 1rem 2rem;
+
+    // Give all selectors padding to the right (written for adaptability).
+    div:nth-of-type(-n+1) {
+        padding-right: 2rem;
+    }
+}

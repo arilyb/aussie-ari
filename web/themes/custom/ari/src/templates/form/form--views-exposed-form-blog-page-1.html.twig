@@ -1,0 +1,22 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a 'form' element.
+ *
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - children: The child elements of the form.
+ *
+ * @see template_preprocess_form()
+ *
+ * @ingroup themeable
+ */
+#}
+{% set attributes = attributes.addClass('o-blog-form') %}
+    <div class="container__row">
+        <div class="container__col-12">
+            <form{{ attributes }}>
+        {{ children }}
+            </form>
+        </div>
+</div>
