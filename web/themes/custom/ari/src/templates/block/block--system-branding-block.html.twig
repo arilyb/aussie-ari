@@ -1,0 +1,38 @@
+{% extends "block.html.twig" %}
+{#
+/**
+ * @file
+ * Default theme implementation for a branding block.
+ *
+ * Each branding element variable (logo, name, slogan) is only available if
+ * enabled in the block configuration.
+ *
+ * Available variables:
+ * - site_logo: Logo for site as defined in Appearance or theme settings.
+ * - site_name: Name for site as defined in Site information settings.
+ * - site_slogan: Slogan for site as defined in Site information settings.
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% block content %}
+    {% set title = site_name|split(' ') %}
+	<div class="o-header">
+        {# {% if site_logo %}
+            <a href="{{ path('<front>') }}" rel="home">
+                <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" fetchpriority="high"/>
+            </a>
+        {% endif %} #}
+        {% for item in title %}
+            {% if loop.first %}
+                <a href="{{ path('<front>') }}" rel="home" class="a-accent">{{ item }} </a>
+            {% else %}
+                <a href="{{ path('<front>') }}" rel="home"> {{ item }}</a>
+            {% endif %}
+        {% endfor %}
+
+        {{ site_slogan }}
+        {# <object data="/{{ directory }}/assets/dist/img/png/star.svg" width="300" height="300"> </object> #}
+    </div>
+{% endblock %}
