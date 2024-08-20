@@ -36,9 +36,9 @@
         <div class="m-header container__col-md-6 container__col-sm-8 container__col-12">
             {% for item in title %}
                 {% if loop.first %}
-                    <a href="{{ path('<front>') }}" rel="home" class="a-accent">{{ item }} </a>
+                    <a href="{{ path('<front>') }}" rel="home" class="a-accent">{{ item }}</a>
                 {% else %}
-                    <a href="{{ path('<front>') }}" rel="home"> {{ item }}</a>
+                    <a href="{{ path('<front>') }}" rel="home">{{ item }}</a>
                 {% endif %}
             {% endfor %}
         </div>

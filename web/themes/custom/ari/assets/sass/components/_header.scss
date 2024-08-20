@@ -4,6 +4,9 @@
     .m-header {
         display: flex;
         justify-content: center;
+        a:not(:last-child) {
+            padding-right: 0.5rem;
+        }
     }
     a {
         font-family: "Staatliches";
