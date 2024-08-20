@@ -1,6 +1,6 @@
 uuid: a06240ac-450f-455c-94bb-189e8ec7b004
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - system
@@ -11,7 +11,7 @@ _core:
 id: ari_site_branding
 theme: ari
 region: header
-weight: 6
+weight: -7
 provider: null
 plugin: system_branding_block
 settings:

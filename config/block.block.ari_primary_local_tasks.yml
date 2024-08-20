@@ -9,7 +9,7 @@ _core:
 id: ari_primary_local_tasks
 theme: ari
 region: header
-weight: -1
+weight: 0
 provider: null
 plugin: local_tasks_block
 settings:
