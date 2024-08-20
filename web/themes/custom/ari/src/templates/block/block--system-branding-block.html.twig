@@ -18,21 +18,37 @@
 
 {% block content %}
     {% set title = site_name|split(' ') %}
-	<div class="o-header">
+    <div class="container">
+	<div class="o-header container__row">
+
+        <div class="m-header-decoration container__col-md-3 container__col-2">
+            <img src="/{{ directory }}/assets/dist/img/png/star.svg" alt="">
+            <img class="a-header-img__second" src="/{{ directory }}/assets/dist/img/png/star.svg" alt="">
+            <img class="a-header-img__third" src="/{{ directory }}/assets/dist/img/png/star.svg" alt="">
+        </div>
+
         {# {% if site_logo %}
             <a href="{{ path('<front>') }}" rel="home">
                 <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" fetchpriority="high"/>
             </a>
         {% endif %} #}
-        {% for item in title %}
-            {% if loop.first %}
-                <a href="{{ path('<front>') }}" rel="home" class="a-accent">{{ item }} </a>
-            {% else %}
-                <a href="{{ path('<front>') }}" rel="home"> {{ item }}</a>
-            {% endif %}
-        {% endfor %}
 
-        {{ site_slogan }}
-        {# <object data="/{{ directory }}/assets/dist/img/png/star.svg" width="300" height="300"> </object> #}
+        <div class="m-header container__col-md-6 container__col-sm-8 container__col-12">
+            {% for item in title %}
+                {% if loop.first %}
+                    <a href="{{ path('<front>') }}" rel="home" class="a-accent">{{ item }} </a>
+                {% else %}
+                    <a href="{{ path('<front>') }}" rel="home"> {{ item }}</a>
+                {% endif %}
+            {% endfor %}
+        </div>
+
+        <div class="m-header-decoration container__col-md-3 container__col-2">
+            <img src="/{{ directory }}/assets/dist/img/png/star.svg" alt="">
+            <img class="a-header-img__second" src="/{{ directory }}/assets/dist/img/png/star.svg" alt="">
+            <img class="a-header-img__third" src="/{{ directory }}/assets/dist/img/png/star.svg" alt="">
+        </div>
     </div>
+    </div>
+
 {% endblock %}

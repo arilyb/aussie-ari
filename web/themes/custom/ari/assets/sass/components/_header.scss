@@ -1,13 +1,46 @@
 .o-header {
     padding: 0rem 2rem;
     padding-top: 3rem;
-    display: flex;
-    justify-content: center;
+    .m-header {
+        display: flex;
+        justify-content: center;
+    }
     a {
         font-family: "Staatliches";
         font-size: 44pt;
     }
     .a-accent {
         color: $color-secondary;
+    }
+    .m-header-decoration {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img {
+            height: 3em;
+        }
+    }
+
+    /*
+    ** Breakpoints to make stars pattern in header responive.
+    */
+    @media screen and (max-width: 600px){
+        .m-header-decoration {
+            display: none;
+        }
+    }
+    @media screen and (max-width: 768px){
+          .a-header-img__second {
+            display: none;
+        }
+    }
+    @media screen and (max-width: 992px){
+        .m-header-decoration {
+            justify-content: space-evenly;
+            .a-header-img__third {
+                display: none;
+            }
+
+        }
     }
 }
