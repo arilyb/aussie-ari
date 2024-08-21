@@ -1,0 +1,19 @@
+.o-page {
+    padding: 0rem 2rem;
+    padding-top: 3rem;
+
+
+    // paragraphs
+    .m-text-w-image {
+        display: flex;
+    }
+    .a-left {
+        flex-direction: row-reverse;
+    }
+    .a-left > div:first-of-type {
+        padding-left: 4rem;
+    }
+    .a-right > div:first-of-type {
+        padding-right: 4rem;
+    }
+}
