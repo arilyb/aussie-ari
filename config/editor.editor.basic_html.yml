@@ -27,6 +27,7 @@ settings:
       - heading
       - code
       - '|'
+      - alignment
       - sourceEditing
   plugins:
     ckeditor5_heading:
@@ -54,6 +55,12 @@ settings:
     ckeditor5_list:
       reversed: false
       startIndex: true
+    ckeditor5_alignment:
+      enabled_alignments:
+        - left
+        - center
+        - right
+        - justify
     ckeditor5_imageResize:
       allow_resize: true
 image_upload:

@@ -1,0 +1,23 @@
+uuid: b1b46947-81c8-4299-a48e-955967604289
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_postion
+    - paragraphs.paragraphs_type.text_with_image
+id: paragraph.text_with_image.field_postion
+field_name: field_postion
+entity_type: paragraph
+bundle: text_with_image
+label: 'Image Postion'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Left
+  off_label: Right
+field_type: boolean

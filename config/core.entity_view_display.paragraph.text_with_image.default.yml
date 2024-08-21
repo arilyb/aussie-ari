@@ -1,0 +1,38 @@
+uuid: 0727fff2-bc72-46a4-bb2a-be4377927595
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_with_image.field_body
+    - field.field.paragraph.text_with_image.field_image
+    - field.field.paragraph.text_with_image.field_postion
+    - paragraphs.paragraphs_type.text_with_image
+  module:
+    - ari_formatters
+    - text
+id: paragraph.text_with_image.default
+targetEntityType: paragraph
+bundle: text_with_image
+mode: default
+content:
+  field_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image:
+    type: image_class_formatter
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+      classes: a-image
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_postion: true

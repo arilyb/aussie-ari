@@ -1,0 +1,12 @@
+uuid: 3a325ef4-6f2b-4754-b08c-c3087d7f4caf
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.socials
+id: paragraph.socials.default
+targetEntityType: paragraph
+bundle: socials
+mode: default
+content: {  }
+hidden: {  }

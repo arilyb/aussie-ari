@@ -1,0 +1,14 @@
+uuid: 8ed1dd31-5826-444b-9a93-dd9b01b0fd27
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.socials
+id: paragraph.socials.default
+targetEntityType: paragraph
+bundle: socials
+mode: default
+content: {  }
+hidden:
+  created: true
+  status: true
