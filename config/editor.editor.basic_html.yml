@@ -29,6 +29,7 @@ settings:
       - '|'
       - alignment
       - sourceEditing
+      - style
   plugins:
     ckeditor5_heading:
       enabled_headings:
@@ -37,6 +38,14 @@ settings:
         - heading4
         - heading5
         - heading6
+    ckeditor5_style:
+      styles:
+        -
+          label: 'Title Red'
+          element: '<h2 class="a-title-accent__red">'
+        -
+          label: 'Title Blue'
+          element: '<h2 class="a-title-accent__blue">'
     ckeditor5_sourceEditing:
       allowed_tags:
         - '<cite>'

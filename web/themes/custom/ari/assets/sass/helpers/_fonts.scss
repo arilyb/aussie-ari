@@ -25,3 +25,15 @@
 :is(h1, h2, h3, h4, h5, h6) {
     font-family: "Staatliches";
 }
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 33pt;
+}
+.a-title-accent__red {
+    color: $color-secondary;
+}
+.a-title-accent__blue {
+    color: $color-primary;
+}
