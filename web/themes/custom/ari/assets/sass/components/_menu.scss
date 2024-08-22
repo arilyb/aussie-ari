@@ -26,4 +26,13 @@
      .a-main-menu-styling-bar-back {
         margin-left: 1rem;
      }
+
+         // Link styling
+    a:link {
+        color: $color-primary;
+        text-decoration: none;
+    }
+    a:hover, a:active, .is-active:link {
+        color: $color-secondary;
+    }
 }

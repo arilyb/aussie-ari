@@ -1,0 +1,76 @@
+.m-reference {
+    display: flex;
+    background-color: #34715d;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    padding-right: 0;
+    border-radius: 43px;
+
+    .a-ref-icon {
+        background-color: white;
+        border-radius: 50%;
+        height: 38px;
+        width: 38px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+// Reference website-link/phone number/e-mail-address.
+.m-reference div:last-child {
+    color: #fff;
+    margin-right: 0.3rem;
+    display: -ms-flexbox;
+    padding: 0rem 0.3rem;
+    display: flex;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -ms-flex-align: center;
+    align-items: center;
+    width: fit-content;
+    a:link {
+    color: #fff;
+    }
+    div {
+        div {
+
+            a:link {
+                color: #fff;
+            }
+
+            /* unvisited link */
+            a:link {
+            color: white;
+            }
+
+            /* visited link */
+            a:visited {
+            color: white;
+            }
+
+            /* mouse over link */
+            a:hover {
+            color: white;
+            }
+
+            /* selected link */
+            a:active {
+            color: white;
+            }
+
+        }
+    }
+}
+
+
+//
+.m-reference-items {
+    display: flex;
+    a:link {
+        color: #fff;
+        }
+}
+

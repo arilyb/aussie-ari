@@ -13,6 +13,7 @@
 @import "components/header";
 @import "components/footer";
 @import "components/page";
+@import "components/links";
 
 * {
     box-sizing: border-box;
@@ -23,14 +24,4 @@ body {
     color: $color-primary;
     background-color: $color-background;
     margin: 0;
-
-    // Link styling
-    a:link {
-        color: $color-primary;
-        text-decoration: none;
-    }
-    a:hover, a:active, .is-active:link {
-        color: $color-secondary;
-    }
-
 }
