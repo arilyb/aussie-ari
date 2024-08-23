@@ -36,31 +36,18 @@
     }
     div {
         div {
-
-            a:link {
-                color: #fff;
-            }
-
             /* unvisited link */
-            a:link {
-            color: white;
-            }
-
-            /* visited link */
-            a:visited {
-            color: white;
-            }
-
-            /* mouse over link */
-            a:hover {
-            color: white;
-            }
-
-            /* selected link */
+            a:link,
+            a:visited,
+            a:hover,
             a:active {
-            color: white;
+            color: $color-font-secondary;
+            text-decoration: none;
             }
+            a:hover {
+            text-decoration: underline;
 
+            }
         }
     }
 }
@@ -69,8 +56,8 @@
 //
 .m-reference-items {
     display: flex;
-    a:link {
-        color: #fff;
-        }
+    > div:not(:first-child) {
+        margin-left: 2rem;
+    }
 }
 

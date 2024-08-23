@@ -24,4 +24,11 @@ body {
     color: $color-primary;
     background-color: $color-background;
     margin: 0;
+
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+        text-decoration: none;
+    }
 }
