@@ -36,7 +36,6 @@
     }
     div {
         div {
-            /* unvisited link */
             a:link,
             a:visited,
             a:hover,
@@ -46,7 +45,6 @@
             }
             a:hover {
             text-decoration: underline;
-
             }
         }
     }
@@ -56,8 +54,10 @@
 //
 .m-reference-items {
     display: flex;
-    > div:not(:first-child) {
-        margin-left: 2rem;
+    flex-wrap: wrap;
+    > div:not(:last-child) {
+        margin-right: 1.5rem;
+        margin-bottom: 1.5rem;
     }
 }
 

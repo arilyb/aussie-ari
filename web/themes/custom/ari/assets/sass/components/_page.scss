@@ -7,13 +7,16 @@
     .m-text-w-image {
         display: flex;
     }
-    .a-left {
+    .a-right {
         flex-direction: row-reverse;
     }
-    .a-left > div:first-of-type {
-        padding-left: 4rem;
-    }
-    .a-right > div:first-of-type {
-        padding-right: 4rem;
+
+    @media screen and (min-width: 600px) {
+        .a-left > div:first-of-type {
+            padding-right: 4rem;
+        }
+        .a-right > div:first-of-type {
+            padding-left: 4rem;
+        }
     }
 }
