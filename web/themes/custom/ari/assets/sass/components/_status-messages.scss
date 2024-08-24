@@ -1,0 +1,10 @@
+.o-status-messages {
+    width: 100%;
+    [data-drupal-messages] {
+        margin: 0 2rem;
+        padding: 2rem;
+        color: white;
+        background-color: $color-status-messages;
+        border-radius: 15px;
+    }
+}
