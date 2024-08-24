@@ -4,9 +4,3 @@ config:
   webroot: 'web'
   xdebug: debug
   php: '8.0'
-services:
-  appserver:
-    webroot: web
-    xdebug: true
-    config:
-      php: .lando/php.ini
