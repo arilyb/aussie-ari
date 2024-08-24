@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Implements hook_preprocess_paragraph().
+ */
+function ari_behaviors_preprocess_paragraph__references(&$variables) {
+    $variables['#attached']['library'][] = 'ari_behaviors/color-setter';
+}
+
+/**
+ * Implements hook_preprocess_paragraph().
+ */
+function ari_behaviors_preprocess_paragraph__text_with_image(&$variables) {
+    $variables['#attached']['library'][] = 'ari_behaviors/typing-animation';
+}

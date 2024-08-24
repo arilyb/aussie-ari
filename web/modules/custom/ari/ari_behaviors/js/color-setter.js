@@ -1,8 +1,7 @@
 (function($) {
-    Drupal.behaviors.myBehavior = {
+    Drupal.behaviors.setColor = {
       attach: function (context, settings) {
-        once('myBehavior', 'html').forEach(function (element) {
-          console.log('hello world');
+        once('setColor', 'html').forEach(function (element) {
 
           // Loop over link buttons.
           $("div.m-reference").each(function() {
@@ -14,9 +13,8 @@
 
             // Set bgc
             $(this).css("background", $.color.text());
-
-          })
         })
-      }
-    };
-    })(jQuery);
+      })
+    }
+  };
+})(jQuery);

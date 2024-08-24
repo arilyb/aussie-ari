@@ -1,0 +1,12 @@
+color-setter:
+  js:
+    js/color-setter.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once
+typing-animation:
+  js:
+    js/typing-animation.js: {}
+    https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js: { type: external }

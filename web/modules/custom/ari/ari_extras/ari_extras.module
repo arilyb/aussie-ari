@@ -97,3 +97,19 @@ function ari_extras_paragraph_reference_form_alter(array &$subform):void {
     $subform['field_color']['widget'][0]['opacity']["#access"] = FALSE;
     $subform['field_icon']['widget'][0]['family']["#access"] = FALSE;
   }
+
+
+  function ari_extras_preprocess_field(&$variables, $hook) {
+    if ($variables['element']['#field_name'] == 'field_body') {
+      /** @var \Drupal\paragraphs\Entity\Paragraph $paragraph */
+      $object = $variables['element']['#object'];
+      $bundle = $object->bundle();
+
+      if ($bundle === 'text_with_image') {
+        $verticle_alignment = $object->field_vertical_text_alignment->value;
+
+        // Set variable
+        $variables['verticle_text_alignment'] = $verticle_alignment;
+      }
+    }
+  }
