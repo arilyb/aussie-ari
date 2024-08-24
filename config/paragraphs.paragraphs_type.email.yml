@@ -1,0 +1,10 @@
+uuid: 8d812044-c5cc-41b6-9f23-1c04a20158d4
+langcode: en
+status: true
+dependencies: {  }
+id: email
+label: Email
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

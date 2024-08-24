@@ -1,0 +1,23 @@
+uuid: 9c9a7c10-9aa7-4846-8178-90e8f9718d0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.phone.field_phone
+    - paragraphs.paragraphs_type.phone
+  module:
+    - phone_number
+id: paragraph.phone.default
+targetEntityType: paragraph
+bundle: phone
+mode: default
+content:
+  field_phone:
+    type: phone_number_international
+    label: hidden
+    settings:
+      as_link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

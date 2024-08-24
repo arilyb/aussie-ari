@@ -1,0 +1,27 @@
+uuid: ae54004c-d58b-4862-a98a-c8a5ce6a25d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.website.field_website
+    - paragraphs.paragraphs_type.website
+  module:
+    - link
+id: paragraph.website.default
+targetEntityType: paragraph
+bundle: website
+mode: default
+content:
+  field_website:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

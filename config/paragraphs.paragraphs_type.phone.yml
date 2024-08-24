@@ -1,0 +1,10 @@
+uuid: a530d525-2ad0-4327-a9c5-9d8f6dfba45f
+langcode: en
+status: true
+dependencies: {  }
+id: phone
+label: Phone
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

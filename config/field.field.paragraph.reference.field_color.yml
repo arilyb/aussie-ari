@@ -1,0 +1,25 @@
+uuid: 6b153ed0-762d-4fca-8e16-0c1a529ecb15
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_color
+    - paragraphs.paragraphs_type.reference
+  module:
+    - color_field
+id: paragraph.reference.field_color
+field_name: field_color
+entity_type: paragraph
+bundle: reference
+label: Color
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    color: '#FEECD3'
+    opacity: !!float 1
+default_value_callback: ''
+settings:
+  opacity: 1
+field_type: color_field_type

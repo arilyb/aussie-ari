@@ -1,0 +1,44 @@
+uuid: a5b6323b-cc27-49ab-a74b-7e3212541d48
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.reference.field_color
+    - field.field.paragraph.reference.field_icon
+    - field.field.paragraph.reference.field_link
+    - paragraphs.paragraphs_type.reference
+  module:
+    - color_field
+    - entity_reference_revisions
+    - material_icons
+id: paragraph.reference.default
+targetEntityType: paragraph
+bundle: reference
+mode: default
+content:
+  field_color:
+    type: color_field_formatter_text
+    label: hidden
+    settings:
+      format: hex
+      opacity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_icon:
+    type: material_icons
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_link:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

@@ -1,0 +1,20 @@
+uuid: 42c50382-25b1-49e0-bfca-a7346cbcfb5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.email.field_email
+    - paragraphs.paragraphs_type.email
+id: paragraph.email.default
+targetEntityType: paragraph
+bundle: email
+mode: default
+content:
+  field_email:
+    type: email_mailto
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

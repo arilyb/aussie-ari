@@ -1,0 +1,25 @@
+uuid: be5da5a8-682c-493e-9134-9379fcd602f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.website.field_website
+    - paragraphs.paragraphs_type.website
+  module:
+    - link
+id: paragraph.website.default
+targetEntityType: paragraph
+bundle: website
+mode: default
+content:
+  field_website:
+    type: link_default
+    weight: 0
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

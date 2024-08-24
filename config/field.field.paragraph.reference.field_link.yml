@@ -1,62 +1,62 @@
-uuid: c363c50c-2e2d-4c0b-8ece-a6d5185daf25
+uuid: 404732ff-4678-4748-81bf-df7e759cbe34
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_content
-    - node.type.page
-    - paragraphs.paragraphs_type.body
-    - paragraphs.paragraphs_type.references
-    - paragraphs.paragraphs_type.text_with_image
+    - field.storage.paragraph.field_link
+    - paragraphs.paragraphs_type.email
+    - paragraphs.paragraphs_type.phone
+    - paragraphs.paragraphs_type.reference
+    - paragraphs.paragraphs_type.website
   module:
     - entity_reference_revisions
-id: node.page.field_content
-field_name: field_content
-entity_type: node
-bundle: page
-label: Content
+id: paragraph.reference.field_link
+field_name: field_link
+entity_type: paragraph
+bundle: reference
+label: Link
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      body: body
-      text_with_image: text_with_image
-      references: references
+      phone: phone
+      email: email
+      website: website
     negate: 0
     target_bundles_drag_drop:
       body:
-        weight: 4
-        enabled: true
+        weight: 9
+        enabled: false
       email:
         weight: 12
-        enabled: false
+        enabled: true
       meta_data:
-        weight: 5
+        weight: 10
         enabled: false
       phone:
         weight: 11
-        enabled: false
+        enabled: true
       reference:
         weight: 12
         enabled: false
       references:
         weight: 13
-        enabled: true
+        enabled: false
       socials:
-        weight: 6
+        weight: 14
         enabled: false
       text_with_image:
-        weight: 9
-        enabled: true
+        weight: 15
+        enabled: false
       title:
-        weight: 6
+        weight: 16
         enabled: false
       website:
         weight: 18
-        enabled: false
+        enabled: true
 field_type: entity_reference_revisions

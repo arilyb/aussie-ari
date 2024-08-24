@@ -1,0 +1,28 @@
+uuid: 88a48db4-de0e-4760-92de-c7a8cff0280a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.phone.field_phone
+    - paragraphs.paragraphs_type.phone
+  module:
+    - phone_number
+id: paragraph.phone.default
+targetEntityType: paragraph
+bundle: phone
+mode: default
+content:
+  field_phone:
+    type: phone_number_default
+    weight: 0
+    region: content
+    settings:
+      default_country: AU
+      placeholder: 'Phone number'
+      phone_size: 60
+      extension_size: 5
+      country_selection: code
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

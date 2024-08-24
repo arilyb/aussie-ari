@@ -1,0 +1,23 @@
+uuid: 91d01b4b-1433-4391-8f64-d2b7ca699643
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.email.field_email
+    - paragraphs.paragraphs_type.email
+id: paragraph.email.default
+targetEntityType: paragraph
+bundle: email
+mode: default
+content:
+  field_email:
+    type: email_default
+    weight: 0
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

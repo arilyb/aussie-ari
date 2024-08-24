@@ -1,60 +1,53 @@
-uuid: c363c50c-2e2d-4c0b-8ece-a6d5185daf25
+uuid: 3911093a-e119-4c6f-a5ae-9f7be24a9aad
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_content
-    - node.type.page
-    - paragraphs.paragraphs_type.body
+    - field.storage.paragraph.field_reference
+    - paragraphs.paragraphs_type.reference
     - paragraphs.paragraphs_type.references
-    - paragraphs.paragraphs_type.text_with_image
   module:
     - entity_reference_revisions
-id: node.page.field_content
-field_name: field_content
-entity_type: node
-bundle: page
-label: Content
+id: paragraph.references.field_reference
+field_name: field_reference
+entity_type: paragraph
+bundle: references
+label: Reference
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      body: body
-      text_with_image: text_with_image
-      references: references
+      reference: reference
     negate: 0
     target_bundles_drag_drop:
       body:
-        weight: 4
-        enabled: true
-      email:
-        weight: 12
+        weight: 10
         enabled: false
       meta_data:
-        weight: 5
-        enabled: false
-      phone:
         weight: 11
         enabled: false
-      reference:
+      phone:
         weight: 12
         enabled: false
-      references:
+      reference:
         weight: 13
         enabled: true
+      references:
+        weight: 14
+        enabled: false
       socials:
-        weight: 6
+        weight: 15
         enabled: false
       text_with_image:
-        weight: 9
-        enabled: true
+        weight: 16
+        enabled: false
       title:
-        weight: 6
+        weight: 17
         enabled: false
       website:
         weight: 18
