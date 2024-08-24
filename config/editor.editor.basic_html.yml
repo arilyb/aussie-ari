@@ -46,6 +46,9 @@ settings:
         -
           label: 'Title Blue'
           element: '<h2 class="a-title-accent__blue">'
+        -
+          label: 'Title animate'
+          element: '<span class="a-animate">'
     ckeditor5_sourceEditing:
       allowed_tags:
         - '<cite>'
@@ -61,6 +64,7 @@ settings:
         - '<h4 id>'
         - '<h5 id>'
         - '<h6 id>'
+        - '<span>'
     ckeditor5_list:
       reversed: false
       startIndex: true

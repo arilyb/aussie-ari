@@ -6,6 +6,7 @@ dependencies:
     - field.field.paragraph.text_with_image.field_body
     - field.field.paragraph.text_with_image.field_image
     - field.field.paragraph.text_with_image.field_postion
+    - field.field.paragraph.text_with_image.field_vertical_text_alignment
     - paragraphs.paragraphs_type.text_with_image
   module:
     - ari_formatters
@@ -36,3 +37,4 @@ content:
     region: content
 hidden:
   field_postion: true
+  field_vertical_text_alignment: true

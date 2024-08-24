@@ -2,9 +2,9 @@ _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
   admin_toolbar: 0
+  ari_behaviors: 0
   ari_extras: 0
   ari_formatters: 0
-  ari_reference_color: 0
   automated_cron: 0
   big_pipe: 0
   block: 0
