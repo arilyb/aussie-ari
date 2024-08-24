@@ -22,18 +22,10 @@
     src: url(fonts/Staatliches/Staatliches-regular.ttf);
 }
 
-:is(h1, h2, h3, h4, h5, h6) {
+:is(h1, h2, h3, h4, h5, h6),
+.a-animate {
     font-family: "Staatliches";
 }
-
-h2 {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    font-size: 33pt;
-}
-.a-title-accent__red {
-    color: $color-secondary;
-}
-.a-title-accent__blue {
+.a-animate {
     color: $color-primary;
 }

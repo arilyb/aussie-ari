@@ -40,6 +40,12 @@
 #}
 {% extends 'paragraph.html.twig' %}
 
+{# Text alignemnent  (vertical) #}
+{% set text_alignement = paragraph.field_vertical_text_alignment.value %}
+
+
+
+{# Image alignment #}
 {% if paragraph.field_postion.value %}
     {% set image_position_class = "a-left" %}
 {% else %}
@@ -47,5 +53,5 @@
 {% endif %}
 
 
-{% set classes = image_position_class ~ ' m-text-w-image a-blog-content container__row' %}
+{% set classes = image_position_class ~ text_position_class ~' m-text-w-image container__row' %}
 {% set attributes = attributes.addClass(classes) %}
