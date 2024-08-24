@@ -1,0 +1,8 @@
+<?php
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function ari_reference_color_preprocess_paragraph__references(&$variables) {
+    $variables['#attached']['library'][] = 'ari_reference_color/color-setter';
+}
