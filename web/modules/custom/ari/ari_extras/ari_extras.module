@@ -1,9 +1,15 @@
 <?php
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\paragraphs\Entity\Paragraph;
 
+/**
+ * Implements hook_form_alter().
+ *
+ * Changes the appearance of the sort buttons on the blogs view page:
+ *  - Hides the 'sort by' select if there is only one option to chose from.
+ *  - Hides the submit button because form is now submitted on value change.
+ */
 function ari_extras_form_views_exposed_form_alter(&$form, FormStateInterface $form_state, $form_id) {
-
-
 
     if($form['#id'] === "views-exposed-form-blog-page-1") {
 
@@ -21,4 +27,73 @@ function ari_extras_form_views_exposed_form_alter(&$form, FormStateInterface $fo
         // Hide submit button
         unset($form['actions']['submit']);
     }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function ari_extras_form_alter(&$form, $form_state, $form_id) {
+
+    $value = $form;
+    if ($form_id == "contenttype_node_form") {
+      $form['field_content'][3]['subform']['field_reference'][0]['subform']['field_color']['#access'] = FALSE;
+    }
+}
+
+
+/**
+ * Implements hook_field_widget_single_element_form_alter().
+ *
+ * Creates MY_MODULE_paragraph_PARAGRAPH_BUNDLE_form_alter hooks to seperate code over different functions.
+ *
+ * @link [https://drupal.stackexchange.com/a/317870/3813] Description and discussion
+ */
+function ari_extras_field_widget_single_element_form_alter(&$element, FormStateInterface $form_state, $context) {
+    if (!isset($element['#paragraph_type'])) {
+      return;
+    }
+    $delta = $context['delta'];
+    $paragraphBundle = $element['#paragraph_type'];
+
+    /** @var \Drupal\field\Entity\FieldConfig $fieldDefinition */
+    $fieldDefinition = $context['items']->getFieldDefinition();
+    $contentFieldName = $fieldDefinition->getName();
+
+    // @see \Drupal\paragraphs\Plugin\Field\FieldWidget\ParagraphsWidget::formElement()
+    $widgetState = \Drupal\Core\Field\WidgetBase::getWidgetState($element['#field_parents'], $contentFieldName, $form_state);
+
+    // If this is an empty paragraph, do nothing.
+    if (!isset($widgetState['paragraphs'][$delta])) {
+      return;
+    }
+
+    // Don't act on Paragraph previews.
+    if (!\Drupal\Core\Render\Element::children($element['subform'])) {
+      return;
+    }
+
+    /** @var \Drupal\paragraphs\Entity\Paragraph $paragraph */
+    $paragraph = $widgetState['paragraphs'][$delta]['entity'];
+
+    $functionName = 'ari_extras_paragraph_' . $paragraphBundle . '_form_alter';
+    if (function_exists($functionName)) {
+      $functionName($element['subform'], $element, $form_state, $context, $delta, $paragraph);
+    }
+}
+
+/**
+ * Implements hook_form_alter().
+ *
+ * Hide fields from reference form as it's not needed and create clutter in edit form:
+ *  - field_color:
+ *      - opacity
+ *  - field_icon:
+ *      - family
+ */
+function ari_extras_paragraph_reference_form_alter(array &$subform):void {
+    // Set default opacity value to 1.
+    $subform['field_color']['widget'][0]['opacity']['#default_value'] = 1;
+    // Hide field.
+    $subform['field_color']['widget'][0]['opacity']["#access"] = FALSE;
+    $subform['field_icon']['widget'][0]['family']["#access"] = FALSE;
   }
