@@ -30,7 +30,8 @@
         "drupal/better_exposed_filters": "^6.0",
         "drupal/phone_number": "^2.0@alpha",
         "drupal/material_icons": "^2.0",
-        "drupal/color_field": "^3.0"
+        "drupal/color_field": "^3.0",
+        "drupal/viewsreference": "^2.0@beta"
     },
     "require-dev": {
         "drupal/core-dev": "^9.2"

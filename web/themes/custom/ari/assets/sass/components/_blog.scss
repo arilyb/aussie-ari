@@ -1,11 +1,25 @@
-.o-blog__content {
-    margin-top: -3rem;
-    padding: 0 2rem;
-    position: relative;
-    .m-blog__content {
-        background-color: #fff;
-        border: 1px solid #000;
-        padding: 1rem 3rem;
+.o-article {
+    .o-blog__content {
+        margin-top: -3rem;
+        padding: 0 2rem;
+        position: relative;
+        .m-blog__content {
+            background-color: #fff;
+            border: 1px solid #000;
+            padding: 1rem 3rem;
+        }
+    }
+
+    /**
+    *** Meta data.
+    */
+    .m-meta-data {
+        padding-top: 1.5rem;
+        color: $color-secondary;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid $color-secondary;
     }
 }
 
@@ -31,17 +45,7 @@
     margin-bottom: 3rem;
 }
 
-/**
-*** Meta data.
-*/
-.m-meta-data {
-    padding-top: 1.5rem;
-    color: $color-secondary;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px solid $color-secondary;
-}
+
 
 .m-tags {
     display: flex;

@@ -1,0 +1,43 @@
+.o-article__teaser-slider {
+    position: relative;
+    padding-right: 1rem;
+
+    .a-image {
+        height: 230px;
+    }
+    .a-blog-title {
+        position: absolute;
+        bottom: 20px;
+        right: 1rem;
+        background-color: $color-background-secondary;
+        font-size: 14pt;
+        padding: 0.5rem 1rem;
+        font-family: 'Staatliches';
+    }
+
+    .a-blog-content {
+        display: none;
+    }
+
+    // Date.
+    .m-meta-data div {
+        position: absolute;
+        padding: 0.2rem 0.3rem;
+        font-size: 9pt;
+        top: 10px;
+
+    }
+    .m-meta-data div:first-child {
+        background-color: $color-background-secondary;
+        left: 10px;
+    }
+
+    // Location
+    .m-meta-data div:last-child {
+        background-color: $color-secondary;
+        color: $color-background-secondary;
+
+        right: 26px;
+
+    }
+}
