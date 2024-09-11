@@ -10,3 +10,10 @@ typing-animation:
   js:
     js/typing-animation.js: {}
     https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js: { type: external }
+slider:
+  css:
+    layout:
+      https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css: { type: external }
+  js:
+    https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js: { type: external }
+    js/slider.js: {}
