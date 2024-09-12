@@ -39,6 +39,31 @@
         color: $color-background-secondary;
 
         right: 26px;
+    }
+}
 
+// View for content items (like blog).
+.a-view-title {
+    font-family: 'Staatliches';
+    font-size: 22pt;
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+}
+
+.a-more-link {
+    display: flex;
+    justify-content: flex-end;
+
+    a {
+        border: 1px solid $color-primary;
+        padding: 0.5rem 1rem;
+        margin-top: 1rem;
+        font-family: staatliches;
+        margin-bottom: 2rem;
+    }
+
+    a:hover {
+        color: $color-background-secondary;
+        background-color: $color-primary;
     }
 }

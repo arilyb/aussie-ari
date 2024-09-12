@@ -13,12 +13,20 @@
         display: flex;
         margin-bottom: 1rem;
 
+        @media screen and (max-width: 768px) {
+            h2 {
+                font-size: 25pt;
+            }
+        }
+        @media screen and (min-width: 768px) {
+            h2 {
+                font-size: 33pt;
+            }
+        }
+
         h2 {
             margin-top: 0;
-            font-size: 33pt;
             margin-bottom: 0rem;
-
-
         }
         h2:last-child {
             margin-bottom: 1rem;

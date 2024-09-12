@@ -10,16 +10,30 @@
         }
     }
 
+    @media only screen and (max-width: 600px) {
+        .o-blog__content {
+            padding: 0 0.5rem;
+            .m-blog__content {
+                padding: 1rem 1rem;
+            }
+        }
+    }
+
     /**
     *** Meta data.
     */
     .m-meta-data {
-        padding-top: 1.5rem;
         color: $color-secondary;
         text-transform: uppercase;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         border-top: 1px solid $color-secondary;
+
+        > div {
+            margin-top: 1.5rem;
+
+        }
     }
 }
 

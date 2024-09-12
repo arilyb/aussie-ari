@@ -2,3 +2,8 @@ global-styling:
   css:
     theme:
       assets/dist/style.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once

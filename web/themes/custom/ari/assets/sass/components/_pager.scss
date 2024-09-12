@@ -1,0 +1,26 @@
+.pager__items {
+    font-size: 14pt;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    .pager__item {
+        a:link {
+            color: $color-primary;
+        }
+    }
+    .is-active {
+        a {
+            font-weight: bold;
+            color: $color-secondary;
+        }
+    }
+    .pager__item:not(:last-child) {
+        margin-right: 1.5rem;
+    }
+    .pager__item--first,
+    .pager__item--last {
+        display: none;
+    }
+
+}
