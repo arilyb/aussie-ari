@@ -1,3 +1,6 @@
+.o-article__full {
+    margin: 0 2rem;
+}
 .o-article {
     .o-blog__content {
         margin-top: -3rem;
@@ -86,27 +89,30 @@
 /**
 *** Teaser viewmode.
 */
-.o-article {
+.o-article__teaser {
     width: 100%;
-}
-.o-blog__content__teaser {
-    .a-blog-title {
-        font-size: 13pt;
-    }
-    .a-blog-content > p {
-        font-size: 9pt;
-    }
-    .m-meta-data {
-        flex-direction: column;
-        div {
+    .o-blog__content__teaser {
+        .a-blog-title {
+            font-size: 13pt;
+        }
+        .a-blog-content > p {
             font-size: 9pt;
         }
-        div:first-of-type {
-            color: $color-primary;
+        .m-meta-data {
+            flex-direction: column;
+            div {
+                font-size: 9pt;
+                margin-top: 0;
+
+            }
+            div:first-of-type {
+                color: $color-primary;
+                padding-top: 1rem;
+            }
         }
-    }
-    .m-blog__content {
-        padding: 1rem;
+        .m-blog__content {
+            padding: 1rem;
+        }
     }
 }
 
@@ -115,7 +121,7 @@
 */
 // Extra small devices (phones, 600px and down)
 @media only screen and (max-width: 600px) {
-    .o-article {
+    .o-article__teaser {
         padding: 0 2rem;
         padding-bottom: 6rem;
     }
@@ -123,15 +129,15 @@
 
 // Small devices (portrait tablets and large phones, 600px and up)
 @media only screen and (min-width: 601px) and (max-width: 767px) {
-    .o-article:nth-child(odd) {
+    .o-article__teaser:nth-child(odd) {
         padding-left: 2rem;
         padding-right: 0.5rem;
     }
-    .o-article:nth-child(even) {
+    .o-article__teaser:nth-child(even) {
         padding-left: 0.5rem;
         padding-right: 2rem;
     }
-    .o-article {
+    .o-article__teaser {
         padding-bottom: 5rem;
     }
 }
@@ -139,21 +145,21 @@
 // Medium devices (landscape tablets, 768px and up)
 @media only screen and (min-width: 768px) {
     // Middle item
-    .o-article:nth-child(3n+2) {
+    .o-article__teaser:nth-child(3n+2) {
         padding-left: 1rem;
         padding-right: 1rem;
     }
 
     // Left item
-    .o-article:nth-child(3n+1) {
+    .o-article__teaser:nth-child(3n+1) {
         padding-left: 2rem;
     }
 
     // Right item
-    .o-article:nth-child(3n+3) {
+    .o-article__teaser:nth-child(3n+3) {
         padding-right: 2rem;
     }
-    .o-article {
+    .o-article__teaser {
         padding-bottom: 3rem;
     }
 }
