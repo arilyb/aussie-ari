@@ -1,5 +1,6 @@
 .o-article__full {
     margin: 0 2rem;
+    margin-bottom: 3rem;
 }
 .o-article {
     .o-blog__content {
@@ -10,6 +11,9 @@
             background-color: #fff;
             border: 1px solid #000;
             padding: 1rem 3rem;
+        }
+        .a-blog-content {
+            margin-bottom: 3rem;
         }
     }
 
@@ -58,10 +62,6 @@
     padding-bottom: 1rem;
 }
 
-.a-blog-content {
-    margin-bottom: 3rem;
-}
-
 
 
 .m-tags {
@@ -95,9 +95,6 @@
         .a-blog-title {
             font-size: 13pt;
         }
-        .a-blog-content > p {
-            font-size: 9pt;
-        }
         .m-meta-data {
             flex-direction: column;
             div {
@@ -112,6 +109,12 @@
         }
         .m-blog__content {
             padding: 1rem;
+            .a-blog-content {
+                margin-bottom: 1rem;
+            }
+            .a-blog-content > p {
+                font-size: 9pt;
+            }
         }
     }
 }
