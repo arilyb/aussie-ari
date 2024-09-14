@@ -8,7 +8,7 @@ dependencies:
     - image.style.thumbnail
     - node.type.blog
   module:
-    - image
+    - focal_point
     - paragraphs
     - path
 id: node.blog.default
@@ -43,12 +43,14 @@ content:
         duplicate: duplicate
     third_party_settings: {  }
   field_image:
-    type: image_image
+    type: image_focal_point
     weight: 4
     region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
+      preview_link: false
+      offsets: '50,50'
     third_party_settings: {  }
   path:
     type: path

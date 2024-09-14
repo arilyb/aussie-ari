@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.blog.field_content
     - field.field.node.blog.field_image
+    - image.style.focal_point_full
     - node.type.blog
   module:
     - ari_formatters
@@ -28,7 +29,7 @@ content:
     type: image_class_formatter
     label: hidden
     settings:
-      image_style: ''
+      image_style: focal_point_full
       image_link: ''
       classes: a-image
       image_loading:

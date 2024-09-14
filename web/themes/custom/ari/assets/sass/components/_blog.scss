@@ -39,7 +39,25 @@
 
         > div {
             margin-top: 1.5rem;
+        }
+    }
 
+    // Meta data behaviour on small devices
+    @media only screen and (max-width: 600px) {
+        .m-meta-data {
+            // Date & Location
+            > div:not(:last-child) {
+                width: 50%;
+            }
+            // Location
+            > div:nth-child(even) {
+                text-align: end;
+            }
+            // Tags
+            .m-tags {
+                width: 100%;
+                justify-content: flex-end;
+            }
         }
     }
 }

@@ -8,6 +8,7 @@ dependencies:
     - paragraphs.paragraphs_type.body
     - paragraphs.paragraphs_type.references
     - paragraphs.paragraphs_type.text_with_image
+    - paragraphs.paragraphs_type.view
   module:
     - entity_reference_revisions
 id: node.page.field_content
@@ -27,6 +28,7 @@ settings:
       body: body
       text_with_image: text_with_image
       references: references
+      view: view
     negate: 0
     target_bundles_drag_drop:
       body:
@@ -56,6 +58,9 @@ settings:
       title:
         weight: 6
         enabled: false
+      view:
+        weight: 21
+        enabled: true
       website:
         weight: 18
         enabled: false
