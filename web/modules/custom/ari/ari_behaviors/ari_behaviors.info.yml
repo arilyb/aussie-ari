@@ -2,4 +2,4 @@ name: Reference Color
 type: module
 description: "Tool to up the background color of link buttons and set them in DOM."
 package: 'Drupal'
-core_version_requirement: 9.x
+core_version_requirement: 9.x || ^10

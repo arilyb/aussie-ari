@@ -7,3 +7,8 @@ echo "Import of configuration complete.\n";
 echo "Rebuilding cache.\n";
 passthru('drush cr');
 echo "Rebuilding cache complete.\n";
+echo "Import of configuration complete.\n";
+// Update db
+echo "Updating database.\n";
+passthru('drush updatedb -y');
+echo "Database update complete.\n";

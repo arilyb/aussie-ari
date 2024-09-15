@@ -41,6 +41,7 @@ module:
   path: 0
   path_alias: 0
   phone_number: 0
+  phpass: 0
   search: 0
   shortcut: 0
   system: 0
@@ -50,6 +51,7 @@ module:
   toolbar: 0
   tour: 0
   update: 0
+  upgrade_status: 0
   user: 0
   views_ui: 0
   viewsreference: 0

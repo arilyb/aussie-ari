@@ -21,7 +21,7 @@ content:
     label: hidden
     settings:
       timezone_override: ''
-      date_format: 'd M ''y'
+      date_format: "d M 'y"
     third_party_settings: {  }
     weight: 0
     region: content

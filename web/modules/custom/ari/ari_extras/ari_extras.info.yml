@@ -2,4 +2,4 @@ name: Ari extras
 type: module
 description: "Extra functionalities by using hooks "
 package: 'Drupal'
-core_version_requirement: 9.x
+core_version_requirement: 9.x || ^10

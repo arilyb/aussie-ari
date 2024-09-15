@@ -6,7 +6,8 @@ dependencies:
     - field.storage.node.field_content
     - node.type.blog
     - paragraphs.paragraphs_type.body
-    - paragraphs.paragraphs_type.text_with_image
+    - paragraphs.paragraphs_type.meta_data
+    - paragraphs.paragraphs_type.title
   module:
     - entity_reference_revisions
 id: node.blog.field_content
@@ -24,22 +25,41 @@ settings:
   handler_settings:
     target_bundles:
       body: body
-      text_with_image: text_with_image
-    negate: 1
+      meta_data: meta_data
+      title: title
+    negate: 0
     target_bundles_drag_drop:
       body:
         weight: 4
         enabled: true
+      email:
+        weight: 13
+        enabled: false
       meta_data:
         weight: 5
+        enabled: true
+      phone:
+        weight: 15
+        enabled: false
+      reference:
+        weight: 16
+        enabled: false
+      references:
+        weight: 17
         enabled: false
       socials:
         weight: 6
         enabled: false
       text_with_image:
         weight: 9
-        enabled: true
+        enabled: false
       title:
         weight: 6
+        enabled: true
+      view:
+        weight: 21
+        enabled: false
+      website:
+        weight: 22
         enabled: false
 field_type: entity_reference_revisions

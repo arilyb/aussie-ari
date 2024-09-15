@@ -2,4 +2,4 @@ name: Custom Formatters
 type: module
 description: "Custom field formatters."
 package: 'Drupal'
-core_version_requirement: 9.x
+core_version_requirement: 9.x || ^10
